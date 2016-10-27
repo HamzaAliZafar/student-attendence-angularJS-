@@ -1,0 +1,21 @@
+<div class="container-fluid"> 
+	
+	<div class="col-md-10" style="margin-left: 20px;">
+		<h1>Attendance Selection:</h1>
+		<ul class="views">
+			<table style="width:100%">
+				<tr>
+				<th>NUMBER</th>
+				<th>ID</th>
+				<th>CLASS</th>
+				</tr>
+				<tr ng-repeat="classe in views | filter:query">	
+					<td><a href="#/assignment/{{classe.class}}">{{classe.number}}</a></td>
+					<td><a href="#/assignment/{{classe.class}}">{{classe.ID}}</a></td>
+					<td><a href="#/assignment/{{classe.class}}">{{classe.class}}</a></td>
+				</tr>
+			</table>
+        </ul>
+	</div>
+</div>
+

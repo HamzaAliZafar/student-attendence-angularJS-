@@ -1,0 +1,57 @@
+<div class="container-fluid"> 
+	   <div class="col-md-10">
+        <h3>BSCS-4C Attendance Roster</h3>
+		<div class="col-md-12">
+			<div id="detail" class="col-md-9">
+				<div class="col-md-5">
+					<h5><strong>Class Nbr:</strong>1308 Web Engg</h5>
+				</div>
+				<div class="col-md-2">
+					<h5><strong>Section:</strong> C2L</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div id="detail" class="col-md-9">
+				<div class="col-md-5">
+					<h5><strong>Catalog Number:</strong> CS 344</h5>
+				</div>
+				<div class="col-md-3">
+					<h5><strong>Component:</strong> Lecture</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div id="detail" class="col-md-9" style="margin-bottom: 20px;">
+				<div class="col-md-5">
+					<h5><strong>Status/ Reason:</strong>Enrolled / Enrolled</h5>
+				</div>
+				<div class="col-md-4">
+					<h5><strong>Status Date:</strong><span ng-bind="date | date:'MM/dd/yyyy'"></span></h5>
+				</div>
+			</div>
+		</div>
+		
+        <ul class="phones">
+			<table style="width:100%">
+				<tr>
+				<th>NAME</th>
+				<th>REG NO</th>
+				<th>PRESENT <input type="checkbox" ng-model="all"></input></th>
+				<th>ATTENDANCE</th>
+				</tr>
+				<tr ng-repeat="student in phones | filter:query | orderBy:orderProp">	
+					<td>{{student.name}}</td>
+					<td>{{student.RegNo}}</td>
+					<td><input type="checkbox" ng-checked="all" ng-model='chkMonitor' ng-click="save($index, chkMonitor)"></input></td>
+					<td>{{student.Attendance}}</td>
+				</tr>
+			</table>
+        </ul>
+      </div>
+	  <a href="#/assignment"><button class="btn btn-danger" style="float: right; margin-right: 250px;">EXIT</button></a>
+	  <a href="#/assignment"><button class="btn btn-primary" style="float: right; margin-right: 10px;">SAVE</button></a>
+	  <div class="col-md-12">
+		<p>{{msg}}</p>
+	  </div>
+	</div>

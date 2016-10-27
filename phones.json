@@ -1,0 +1,27 @@
+[
+    {
+	"name": "Adil Rabbanni",
+     "RegNo": 112731,
+     "age": 19,
+	 "Attendance":0
+	 },
+    {
+	"name": "Bilal Anwer",
+     "RegNo": 112672,
+     "age": 20,
+	 "Attendance":0
+	 },
+    {
+	"name": "Hamza Ali Zafar",
+     "RegNo": 112242,
+     "age": 19,
+	 "Attendance":0
+	 },
+	 {
+	 "name": "Mohammad Khalid",
+	  "RegNo": 112671,
+      "age": 19	, 
+	  "Attendance":0
+	  }
+ ]
+ 
